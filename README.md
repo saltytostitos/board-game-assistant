@@ -1,4 +1,6 @@
-# Nuxt 3 Minimal Starter
+Very early publish for my game board assistant. This is a very simple personal project to help draw cards on board games with the kids. I have no intention of polishing this project.
+
+# Nuxt 3
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
@@ -30,7 +32,7 @@ npm run dev
 Build the application for production:
 
 ```bash
-npm run build
+npm run generate
 ```
 
 Locally preview production build:
@@ -38,5 +40,3 @@ Locally preview production build:
 ```bash
 npm run preview
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
