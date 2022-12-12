@@ -1,3 +1,8 @@
+/**
+ * Shuffle any deck. Very simple 1000 ct swap.
+ * @param deck - any[]
+ * @returns any[]
+ */
 export default function (deck: []) {
   for (let a = 0; a < 1000; a++) {
     let location1 = Math.floor(Math.random() * deck.length);

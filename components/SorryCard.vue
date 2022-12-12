@@ -37,7 +37,9 @@
 </template>
 <script setup lang="ts">
 const props = defineProps(["card"]);
+/** Reactive boolean to control class application for .wiggle */
 const animate = ref(false);
+/** Applies boolean to $ref:animate w/timer. */
 const makeAnimate = () => {
   animate.value = true;
   setTimeout(() => {
@@ -45,6 +47,7 @@ const makeAnimate = () => {
   }, 1000);
 };
 
+/** Watch props for changes */
 watch(props, () => {
   makeAnimate();
 });

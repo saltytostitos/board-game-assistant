@@ -20,9 +20,6 @@
 </template>
 <script setup lang="ts">
 import type { SorryDeck } from "~/types/types";
-// const deck = computed(() => {
-//   return sorryDeck();
-// });
 const { data: deck, refresh } = await useAsyncData(async () => {
   return (await useShuffle(sorryDeck())) as SorryDeck[];
 });

@@ -57,6 +57,11 @@ const cards = [
   }
 ];
 
+/**
+ * Sorry deck, generated from dictionary.
+ *
+ * @returns Unshuffled Sorry deck.
+ */
 export default function () {
   let deck: SorryDeck[] = new Array();
 

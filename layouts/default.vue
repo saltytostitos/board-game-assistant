@@ -53,6 +53,7 @@
 </template>
 
 <script setup lang="ts">
+/**  Apply dark mode for DaisyUI attributes */
 const isDark = useDark({
   onChanged(isDark) {
     if (process.client) {
