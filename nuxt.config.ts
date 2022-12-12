@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     reactivityTransform: true
   },
   modules: ["@vueuse/nuxt"],
-  css: ["~/assets/css/tailwind.css"],
+  css: ["@/assets/css/tailwind.css"],
   postcss: {
     plugins: {
       tailwindcss: {},
