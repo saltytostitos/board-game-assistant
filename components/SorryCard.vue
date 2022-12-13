@@ -36,7 +36,12 @@
   </div>
 </template>
 <script setup lang="ts">
-const props = defineProps(["card"]);
+const props = defineProps({
+  card: {
+    required: true,
+    type: Object
+  }
+});
 /** Reactive boolean to control class application for .wiggle */
 const animate = ref(false);
 /** Applies boolean to $ref:animate w/timer. */
@@ -47,10 +52,13 @@ const makeAnimate = () => {
   }, 1000);
 };
 
-/** Watch props for changes */
-watch(props, () => {
-  makeAnimate();
-});
+/** Watch props for changes. Must return props.card from function to work. i.e. () => props.card */
+watch(
+  () => props.card,
+  () => {
+    makeAnimate();
+  }
+);
 </script>
 <style scoped>
 .wiggle {
