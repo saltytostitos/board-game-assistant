@@ -90,6 +90,7 @@ watch(props, () => {
   border: 1rem solid white;
   position: relative;
   background-color: white;
+  border-radius: 1em;
 }
 .card-text {
   position: absolute;
@@ -148,6 +149,8 @@ watch(props, () => {
   position: relative;
   margin-top: auto;
   margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .card-center:before {
   content: "";

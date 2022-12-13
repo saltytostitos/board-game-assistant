@@ -1,21 +1,15 @@
 <template>
   <div class="grid grid-cols-1 gap-y-4">
-    <div class="w-full flex justify-center px-4">
-      <button
-        v-if="currentCard"
-        class="btn btn-primary btn-block hover:btn-outline"
-        @click="increment()"
-      >
+    <div class="w-full grid grid-cols-1 px-4">
+      <button v-if="currentCard" class="btn mx-auto" @click="increment()">
         Draw
       </button>
+      <div v-else class="mx-auto text-center">
+        <h1 class="text-xl">You are out of cards!</h1>
+        <button class="btn-orange" @click="reshuffle()">Reshuffle</button>
+      </div>
     </div>
     <LazySorryCard v-if="currentCard" :card="currentCard" />
-    <div v-else class="w-full grid grid-cols-1 px-4">
-      <h1 class="text-xl text-center">You are out of cards!</h1>
-      <button class="btn btn-error btn-lg" @click="reshuffle()">
-        Reshuffle
-      </button>
-    </div>
   </div>
 </template>
 <script setup lang="ts">

@@ -10,7 +10,10 @@ Planned Games:
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-For component help [DaisyUI Components](https://daisyui.com/components/). (Not sure I like this one yet)
+CSS Engine [UnoCSS](https://github.com/unocss/unocss)
+
+CSS Utilities [TailwindCSS](https://tailwindcss.com/docs)
+
 
 ## Setup
 

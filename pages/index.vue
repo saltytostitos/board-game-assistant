@@ -1,19 +1,12 @@
 <template>
   <div class="grid grid-cols-1 mt-10">
-    <nuxt-link
-      :to="game.page"
-      class="card w-96 bg-neutral-content shadow-xl image-full mx-auto"
-      v-for="game in games"
-      :key="`cards${game.title}`"
-    >
-      <div class="card-body">
-        <h2><img :src="game.image" class="h-10" /></h2>
-        <p></p>
-        <div class="card-actions justify-end">
-          <!-- <button class="btn btn-primary">Card Draw</button> -->
-        </div>
-      </div>
-    </nuxt-link>
+    <ul role="list" class="space-y-3 w-lg mx-auto">
+      <nuxt-link :to="game.page" v-for="game in games" :key="game.title"
+        ><li class="bg-gray-700 px-4 py-4 shadow sm:rounded-md sm:px-6">
+          <img :src="game.image" class="h-12 mx-auto" />
+        </li>
+      </nuxt-link>
+    </ul>
   </div>
 </template>
 
